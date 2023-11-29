@@ -45,6 +45,25 @@ $(document).ready(function () {
 		}
 	});
 
+	/* Permission Form Submission */
+
+	
+	  
+	$("#permissionForm").on( "submit", function( event ) {
+		event.preventDefault();
+		let lambda = "https://924uw0it1b.execute-api.us-east-1.amazonaws.com/kaleidoscope2";
+		$.ajax({
+			url: lambda,
+			type: 'POST',
+			data: JSON.stringify($("#permissionForm").serializeArray()),
+			contentType: 'application/json; charset=utf-8',
+			dataType: 'json',
+			async: false,
+			success: function(msg) {
+				alert(msg);
+			}
+		});
+	});
 });
 
 
