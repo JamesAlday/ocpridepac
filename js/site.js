@@ -45,10 +45,7 @@ $(document).ready(function () {
 		}
 	});
 
-	/* Permission Form Submission */
-
-	
-	  
+	/* Permission Form Submission */  
 	$("#permissionForm").on( "submit", function( event ) {
 		event.preventDefault();
 		let lambda = "https://924uw0it1b.execute-api.us-east-1.amazonaws.com/kaleidoscope2";
@@ -60,7 +57,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			async: false,
 			success: function(msg) {
-				alert(msg);
+				console.log(msg);
 			}
 		});
 	});
