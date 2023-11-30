@@ -58,6 +58,9 @@ $(document).ready(function () {
 			async: false,
 			success: function(msg) {
 				console.log(msg);
+				// trustEmailRequestAccepted
+				alert('Submitted - look out for the email!');
+				$("#permissionForm")[0].reset()
 			}
 		});
 	});
