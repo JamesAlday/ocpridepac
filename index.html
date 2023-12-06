@@ -226,11 +226,11 @@
                 <!--End Content Left Side-->
 
                 <!--Content of the Right Side-->
-                <div class="col-3">
+                <div class="col-2">
                     <p>Please fill in the form below to let us know the minor child that will be attending the event.
                         Include the parent's contact information. They will receive an email which will guide them through
-                        the verification process. Age verification services are provided by 
-                        <a href="https://www.superawesome.com/parents-policy-makers/">SuperAwesome</a>.
+                        the verification process. Permission slip services are provided by 
+                        <a href="https://mobilepermissions.com/">MobilePermissions</a>.
                     </p>
                     <p>
                         <form id="permissionForm" name="permissionForm" action="">
@@ -239,22 +239,27 @@
                                 <input id="name" name="name" class="form-control" placeholder="Participant Name" type="text" required>
                             </div>
                             <div>
-                                <label for="parent">Parent's Name:</label>
-                                <input id="parent" name="parent" class="form-control" placeholder="Parent Name" type="text">
+                                <label for="parent">Parent/Guardian's Full Legal Name<span class="required">*</span>:</label>
+                                <input id="parent" name="parent" class="form-control" placeholder="Parent Name" type="text" required>
                             </div>
                             <div>
-                                <label for="email">Parent's Email<span class="required">*</span>:</label>
+                                <label for="email">Parent/Guardian's Email<span class="required">*</span>:</label>
                                 <input id="email" name="email" class="form-control" placeholder="parent@email.com" type="email" required>
                             </div>
                             <div>
-                                <label for="phone">Parent's Phone:</label>
-                                <input id="phone" name="phone" class="form-control" placeholder="845-555-1234" type="text">
+                                <label for="phone">Parent/Guardian's Phone<span class="required">*</span>:</label>
+                                <input id="phone" name="phone" class="form-control" placeholder="845-555-1234" type="text" required>
                             </div>
                             <div>
-                                <input id="toc" name="toc" type="checkbox" style="height:auto;" required>
-                                <label for="toc"><span class="required">*</span>I have read and understand all regulations associated with this event, as well as the above statements.</label>
+                                <label for="parent">Parent/Guardian's Date of Birth<span class="required">*</span>:</label>
+                                <input id="parent" name="parent" class="form-control" placeholder="01/01/01" type="text" required>
                             </div>
                             <div>
+                                <input id="toc" name="toc" type="checkbox" style="width:5%;" required>
+                                <label for="toc" style="padding:.5em 0 .5em 1em;"><span class="required">*</span>I have read and understand all regulations associated with this event, as well as the above statements.</label>
+                            </div>
+                            <div>
+                                <br>
                                 <span class="required">*</span> required
                             </div>
                             <button type="submit" class="button link-lightbox">

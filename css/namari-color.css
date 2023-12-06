@@ -331,3 +331,20 @@ h6 {
 #landing-footer i {
     color:#999;
 }
+
+
+/* Form */
+#permissionForm div {
+    display: flex;
+    justify-content: flex-start;
+    padding: .5em;
+}
+
+#permissionForm div > label {
+    padding: .5em 1em .5em 0;
+    flex: 1
+}
+
+#permissionForm div > input {
+    width: 50%;
+}
