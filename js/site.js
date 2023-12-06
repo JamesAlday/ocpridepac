@@ -48,7 +48,7 @@ $(document).ready(function () {
 	/* Permission Form Submission */  
 	$("#permissionForm").on( "submit", function( event ) {
 		event.preventDefault();
-		let lambda = "https://924uw0it1b.execute-api.us-east-1.amazonaws.com/kaleidoscope2";
+		let lambda = "https://uqccevk7nkpti4zc37n6d75hra0tbxlw.lambda-url.us-east-1.on.aws/";
 		$.ajax({
 			url: lambda,
 			type: 'POST',
@@ -58,7 +58,6 @@ $(document).ready(function () {
 			async: false,
 			success: function(msg) {
 				console.log(msg);
-				// trustEmailRequestAccepted
 				alert('Submitted - look out for the email!');
 				$("#permissionForm")[0].reset()
 			}
