@@ -248,11 +248,11 @@
                             </div>
                             <div>
                                 <label for="phone">Parent/Guardian's Phone<span class="required">*</span>:</label>
-                                <input id="phone" name="phone" class="form-control" placeholder="845-555-1234" type="text" required>
+                                <input id="phone" name="phone" class="form-control" placeholder="845-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" required>
                             </div>
                             <div>
                                 <label for="parent">Parent/Guardian's Date of Birth<span class="required">*</span>:</label>
-                                <input id="dob" name="dob" class="form-control" placeholder="01/01/01" type="text" required>
+                                <input id="dob" name="dob" class="form-control" placeholder="01/01/01" type="date" required>
                             </div>
                             <div>
                                 <input id="toc" name="toc" type="checkbox" style="width:5%;" required>
