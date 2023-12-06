@@ -48,7 +48,7 @@ $(document).ready(function () {
 	/* Permission Form Submission */  
 	$("#permissionForm").on( "submit", function( event ) {
 		event.preventDefault();
-		let lambda = "https://um3bsbm335.execute-api.us-east-1.amazonaws.com/verify/";
+		let lambda = "https://um3bsbm335.execute-api.us-east-1.amazonaws.com/verify";
 		$.ajax({
 			url: lambda,
 			type: 'POST',
